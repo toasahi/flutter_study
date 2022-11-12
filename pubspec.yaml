@@ -20,6 +20,14 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.10.0
+
+#　flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/fish_icon.png"
+
 
 flutter:
 
@@ -27,16 +35,15 @@ flutter:
 
   assets:
     - images/
-    -
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+    - # fonts:
+      #   - family: Schyler
+      #     fonts:
+      #       - asset: fonts/Schyler-Regular.ttf
+      #       - asset: fonts/Schyler-Italic.ttf
+      #         style: italic
+      #   - family: Trajan Pro
+      #     fonts:
+      #       - asset: fonts/TrajanPro.ttf
+      #       - asset: fonts/TrajanPro_Bold.ttf
+      #         weight: 700
+    #
