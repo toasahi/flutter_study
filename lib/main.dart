@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //デバックのバナーを隠す
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'NotoSans'),
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
@@ -27,10 +28,20 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 32,
-                  wordSpacing: 1.1,
+                  letterSpacing: 1.1,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'GloriaHallelujah',
+                ),
+              ),
+              Text(
+                "Flutter Developer",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  letterSpacing: 2,
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
             ],
           ),
         ),
