@@ -13,29 +13,24 @@ class MyApp extends StatelessWidget {
       //デバックのバナーを隠す
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Container(
-                color: Colors.red,
-                height: 100,
-                width: double.infinity,
-                child: const Text("Container1"),
+            children: const [
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage("images/fish.png"),
               ),
-              Container(
-                color: Colors.blue,
-                height: 100,
-                width: 100,
-                child: const Text("Container2"),
-              ),
-              Container(
-                color: Colors.green,
-                height: 100,
-                width: 100,
-                child: const Text("Container3"),
-              ),
+              Text(
+                "Fish",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32,
+                  wordSpacing: 1.1,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
             ],
           ),
         ),
