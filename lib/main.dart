@@ -18,13 +18,13 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const CircleAvatar(
+            children: const [
+              CircleAvatar(
                 radius: 50,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage("images/fish.png"),
               ),
-              const Text(
+              Text(
                 "Fish",
                 style: TextStyle(
                   color: Colors.white,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'GloriaHallelujah',
                 ),
               ),
-              const Text(
+              Text(
                 "Flutter Developer",
                 style: TextStyle(
                   color: Colors.white,
@@ -43,50 +43,42 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
+              Card(
                 color: Colors.white,
-                margin: const EdgeInsets.symmetric(vertical: 10,horizontal: 25),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.phone,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    "08-0000-0000",
+                    style: TextStyle(
                       color: Colors.blue,
+                      fontSize: 20,
+                      letterSpacing: 2,
+                      fontWeight: FontWeight.bold,
                     ),
-                    SizedBox(width: 10),
-                    Text(
-                      "08-0000-0000",
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 20,
-                        letterSpacing: 2,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
+              Card(
                 color: Colors.white,
-                margin: const EdgeInsets.symmetric(vertical: 10,horizontal: 25),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.email,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    "abcdefg@gmail.com",
+                    style: TextStyle(
                       color: Colors.blue,
+                      fontSize: 20,
+                      letterSpacing: 2,
+                      fontWeight: FontWeight.bold,
                     ),
-                    SizedBox(width: 10),
-                    Text(
-                      "abcdefg@gmail.com",
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 20,
-                        letterSpacing: 2,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
             ],
